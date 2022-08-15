@@ -1,0 +1,59 @@
+
+*{margin:0px; box-sizing: border-box;}
+body{background-color:#0077ac;}
+:root{--main-1:#0077ac;}
+:root{--main-2:#33ab51;}
+
+/*-------------------header--------------------*/
+
+header{padding:16px  2px;  background-color: white; width:100%; position: sticky; top:0px; z-index: 100;}
+header .btn-list  #header-btn{background-color:var(--main-1); display: inline-block; border:none; padding:8px 30px; border-radius:30px; color:white; margin-right:8px; font-size:14px;}
+.container-fluid-custome{width: 90%; margin:0px auto;}
+
+/*-----------------   menu-------------------------*/
+
+.my-list{border-radius:10px; background-color: white;  padding:20px 10px; text-align: center; margin-bottom:25px;   margin-top:25px; }
+.my-list li{ position: relative; width:100px; }
+.my-list li #progress-icon{ display:block; height:12px; width:12px; background-color:silver; margin:10px  auto; transform: rotate(45deg); position: relative; z-index: 2;}
+.my-list li a{ display: block; text-decoration: none; font-size: 12px; font-weight: 500; color:rgb(62, 62, 62); white-space: nowrap;}
+.my-list li::after{content: '';  display: block; background-color:silver; height:1px; position: absolute; top:55%;  width:100%;} 
+.latest-update{background-color:var(--main-2); color:white; font-weight: 600px; padding:15px 30px; border-radius:4px 4px 0px 0px;}
+#toggle-btn{display: none;}
+.dropdown-menu{padding: 0px; border-radius: 0px; background-color: var(--main-1);}
+.dropdown-menu .dropdown-item{color:white;}
+.dropdown-menu .dropdown-item:hover{color:black;}
+
+/*-------------------hero-section--------------------*/
+.hero-section .card{border:none; padding:0px; border-radius: 4px; height:100%;}
+.slider-bg{height:290px;  background-color: white; border-radius:4px;}
+.slider-bg  .slider-1{height: 100%; background-image: url('..//images/image-bg.jpg');
+     background-size: cover; border-radius:4px;
+  position: relative;
+    }
+    .slider-bg  .slider-1  .caption{position: absolute; left:50%; top:50%; transform: translate(-10% , -50%)}
+    .now-text{color:var(--main-2); font-size: 24px;}
+    .deposit{color:var(--main-1); font-size: 25px;  font-weight: 700;}
+    .rnfi-text{color:var(--main-2); font-size: 25px; font-weight: 700;}
+
+    /*----------carousel-------------*/
+    .owl-theme .owl-dots{bottom:0px; position: absolute; left:50%; transform: translate(-50% , 0%);}
+    .owl-nav{position: absolute;  right:0px; top:40%; transform: translate(0% , -60%);}
+   .owl-next{position: absolute; right:0px; transform: translate(50% , -60%); top:30%;  background-color:white!important; width:40px; height:40px; border-radius:100%!important; border:none;}
+   .owl-prev{position: absolute;right:0px; transform: translate(50% , 50%); top:60%;
+     background-color:white!important; width:40px; height:40px; border-radius:100%!important; border:none;}
+     .owl-theme .owl-dots .owl-dot span{width: 10px;
+      height: 10px;
+      margin: 10px 3px;
+      background: #D6D6D6;}
+
+/*-------------------service-section------------------*/
+.service-section{background-color: silver; margin-top:25px; padding-top:25px; padding-bottom: 25px;}
+.service-section .service-heading{font-size:30px; font-weight: 600; text-align: center; color:var(--main-1); padding-bottom: 25px;}
+.service-section ul{list-style: none; display:flex;  background-color: white; border-radius: 4px; padding:0px; flex-wrap: wrap;}
+.service-section ul li{ width:20%; display: flex; align-items: center; padding:15px; border-radius:6px; line-height: 18px; font-size:12px; transition: 0.5s;}
+.service-section .next-line  ul li{width:16.66%;}
+.service-section ul li img{margin-right:10px; }
+.service-section ul li:hover {background-color:var(--main-1); color:white; padding:15px  15px; }
+footer ul{list-style: none; display: flex;  flex-wrap: wrap; margin-bottom: 0px; padding:10px; justify-content: space-between;}
+footer ul li a{text-decoration: none; color:white;  font-size:14px;}
+
